@@ -1,0 +1,10 @@
+[template]
+cargo_generate_version = ">=0.23.0"
+# Template usage docs; GitHub shows this over the root README.md
+ignore = [".github/README.md"]
+# GitHub Actions' ${{ ... }} syntax may collides with Liquid; nothing here is templated by this repository
+exclude = [".github/**"]
+
+[placeholders]
+description = { type = "string", prompt = "Short project description?", default = "This is a Rust project." }
+msrv = { type = "string", prompt = "Minimum supported Rust version?", default = "1.95", regex = "^1\\.[0-9]+(\\.[0-9]+)?$" }

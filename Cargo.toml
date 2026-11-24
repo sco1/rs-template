@@ -1,0 +1,12 @@
+[package]
+name = "{{project-name}}"
+version = "0.1.0"
+edition = "2024"
+rust-version = "{{msrv}}"
+description = "{{description}}"
+repository = "https://github.com/sco1/{{project-name}}"
+readme = "README.md"
+license = "MIT"
+include = ["/src/**", "/tests/**", "/README.md", "/CHANGELOG.md", "/LICENSE"]
+
+[dependencies]
